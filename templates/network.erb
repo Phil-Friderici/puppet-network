@@ -4,7 +4,7 @@
 NETWORKING=yes
 NETWORKING_IPV6=<%= @ipv6_support %>
 HOSTNAME=<%= @hostname %>
-<% if @gateway %>GATEWAY=<%= @gateway %>
+<% if @gateway_real %>GATEWAY=<%= @gateway_real %>
 <% end -%>
 <% if @gatewaydev %>GATEWAYDEV=<%= @gatewaydev %>
 <% end -%>

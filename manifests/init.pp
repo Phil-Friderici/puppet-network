@@ -14,6 +14,12 @@ class network (
   $nisdomain    = undef,
 ) {
 
+  if $::gateway and $gateway == undef {
+    $gateway_real = $::gateway
+  } else {
+    $gateway_real = $gateway
+  }
+
   # Only run on RedHat derived systems.
   case $::osfamily {
     'RedHat': {
