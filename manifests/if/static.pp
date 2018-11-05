@@ -31,9 +31,9 @@
 #
 define network::if::static (
   $ensure,
-  $bootproto = 'static',
   $ipaddress,
   $netmask,
+  $bootproto = 'static',
   $gateway = '',
   $macaddress = '',
   $mtu = '',
